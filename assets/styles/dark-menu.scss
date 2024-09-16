@@ -1,0 +1,45 @@
+.dark-menu{
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 60px 20px 60px;
+	
+	&-options{
+		position: relatuve;
+		display: flex;
+
+		&-item{
+			position: relative;
+			font-size: 20px;
+			color: #192632;
+			font-family: "Trial-Regular";
+			margin-right: 60px;
+			cursor: pointer;
+		}
+		&-item:nth-child(3){
+
+			margin-right: unset;
+		}
+	}
+
+	&-btn{
+		position: relative;
+		display: none;
+		width: 30px;
+		height: 10px;
+		background-image: url("/assets/images/dark-menu-btn.svg");
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+}
+
+	.dark-logo{
+		position: relative;
+		width: 196px;
+		height: 46px;
+		background-image:url("/assets/images/logo-head.svg");
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+

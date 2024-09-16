@@ -1,0 +1,87 @@
+.head{
+    position: relative;
+    width: 100%;
+	height: 800px;
+
+
+	&-back{
+		position: absolute;
+		display: flex;
+		width: 100%;
+		height: 100%;
+		background: #F1E7D4;
+		z-index: 0;
+
+		&-first{
+			position: relative;
+			background: #F1E7D4;
+			width: 60%;
+			height: 100%;
+			z-index: 1;
+		}
+		&-second{
+			position: relative;
+			background: #FC0000;
+			width: 40%;
+			height: 100%;
+			clip-path: polygon(21% 0, 100% 0%, 100% 100%, 0% 100%);
+		}
+	}
+
+	&-wrap{
+		position: relative;
+		display: flex;
+		padding: 20px 60px 20px 60px;
+	}
+	&-text{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 40%;
+		margin-top: 50px;
+
+		&-italic{
+			position: relative;
+			color: #FC0000;
+			font-family: "Trial-Italic";
+			font-size: 30px;
+		}
+		&-large{
+			position: relative;
+			font-family: "Soviet-Font";
+			font-size: 100px;
+			color: #192632;
+		}
+	}
+}
+.btn-order{
+	position: relative;
+    color: #F1F1F1;
+    background:#FC0000;
+    font-family: "Trial-Regular";
+    font-size: 20px;
+    width: fit-content;
+    padding: 20px 60px 18px 60px;
+	transform: skew(-20deg, 0deg);
+	margin-top: 70px;
+	cursor: pointer;
+
+	&-text{
+		position: relative;
+	}
+}
+.bike-img-wrap{
+	position: relative;
+}
+.bike-img{
+    position: absolute;
+    width: 824px;
+    height: 690px;
+    background-image:url("/assets/images/bike.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 0%;
+    margin-right: -412px;
+    top: 14%;
+}
+

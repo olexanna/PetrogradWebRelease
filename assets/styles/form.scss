@@ -1,0 +1,136 @@
+.form{
+    position: relative;
+    width: 725px;
+	margin: 128px auto 137px auto;
+
+	&-title{
+		position: relative;
+		color: #192632;
+		font-size: 60px;
+		font-family: "Soviet-Font";
+		margin: 0px 0px 49px 0px;
+		white-space: nowrap;
+		text-align: center;
+	}
+
+	&-container{
+		margin: 0px 56px;
+	}
+
+	&-block{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+
+		&-contain{
+			position: relative;
+			display: flex;
+			flex-direction: column;
+		}
+		
+		&-inp{
+			position: relative;
+			color: #192632;
+			font-size: 20px;
+			font-family: "Trial-Light";
+			border: 1px solid #BDB199;
+			background: #F1F1F1;
+			outline: unset;
+			padding: 21px 20px 15px 20px;
+			margin-bottom: 9px;
+		}
+		&-inp::placeholder{
+			color: #BDB199;
+			font-size: 20px;
+			font-family: "Trial-Light";
+		}
+		&-inp:nth-child(2){
+			margin-bottom: unset;
+		}
+	}
+
+	&-checkbox{
+		position: relative;
+		display: flex;
+		justify-content: initial;
+		align-items: center;
+		margin: 39px 0px 0px 0px;
+
+		&-submit{
+			position: relative;
+			margin-right: 21px;
+			background: #FC0000;
+			color: #F1F1F1;
+			font-family: "Trial-Light";
+			font-size: 20px;
+			padding: 19px 45px 15px 45px;
+		}
+	}
+
+	&-checkboxBlock{
+		position: relative;
+		margin: 0px 5px;
+
+		&-btn{
+			position: relative;
+		}
+
+		&-btn input{
+			appearance: none;
+			background-color: #fbfbfb;
+			width: 1.15em;
+			height: 1.15em;
+			border: 1px solid black;
+		}
+
+		&-text{
+			position: relative;
+			color: #192632;
+			font-size: 14px;
+			font-family: "Trial-Regular";
+			display: flex;
+		}
+	}
+	
+}
+
+input[type="checkbox"] { display: none; }
+
+input[type="checkbox"] + label {
+  position: relative;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+input[type="checkbox"] + label:before {
+	content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+	flex-shrink: 0;
+    border: 1px solid #192632;
+    position: relative;
+    left: -5px;
+    top: 0;
+    opacity: .6;
+    -webkit-transition: all .12s, border-color .08s;
+    transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

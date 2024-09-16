@@ -1,0 +1,57 @@
+.footer{
+	position: relative;
+	width: 100%;
+	background: #f1e7d4;
+}
+.f-line{
+	position: relative;
+	width: 100%;
+	background: #F1E7D4;
+}
+.f-backLight{
+	background: #F1E7D4;
+}
+.f-backDark{
+	background: #192632;
+	display: flex;
+    padding: 30px 60px 30px 60px;
+	justify-content: space-between;
+
+	&-text{
+		position: relative;
+		font-size: 20px;
+		font-family: "Trial-Light";
+
+		&-dark{
+			position: relative;
+			color: #435260;
+		}
+		&-light{
+			position: relative;
+			color:#F1F1F1;
+			border-bottom: 1px solid #F1E7D4;
+			cursor: pointer;
+		}
+	}
+}
+
+.f-fav{
+	position: relative;
+	display: flex;
+
+	&-img{
+		position: relative;
+		width: 15px;
+		height: 15px;
+		background-repeat: no-repeat;
+		background-image: url("/assets/images/footer-favicon.svg");
+		margin-right: 10px;
+	}
+	&-text{
+		position: relative;
+		font-size: 20px;
+		color: #F1F1F1;
+		font-family: "Trial-Light";
+	}
+}
+

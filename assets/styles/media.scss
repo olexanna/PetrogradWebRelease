@@ -1,0 +1,271 @@
+
+@media( max-width: 1333px ){
+    .head-text-italic {
+        font-size: 25px!important;
+    }
+
+    .head-text-large {
+        font-size: 76px!important;
+    }
+
+    .bike-img {
+        position: absolute!important;
+    }
+}
+
+@media( max-width: 1186px ){
+    .form-block-inp {
+        width: 100%;
+    }
+}
+
+@media( max-width: 1098px ){
+    .head-text-large {
+        font-size: 65px !important;
+    }
+    .bike-img {
+        position: absolute !important;
+    }
+}
+
+@media( max-width: 1098px ){
+    .head-text-large {
+        font-size: 55px !important;
+    }
+    .head-text-italic {
+        font-size: 20px !important;
+    }
+    .btn-order {
+        margin-top: 45px!important;
+    }
+
+    .bike-img {
+        width: 760px!important;
+        height: 660px!important;
+        margin-right: -380px !important;
+    }
+}
+
+@media( max-width: 926px ){
+    .head{
+        height: 710px!important;
+    }
+
+    .head-text-large {
+        font-size: 45px !important;
+    }
+    
+    .bike-img {
+        width: 698px !important;
+        height: 601px !important;
+        margin-right: -349px !important;
+    }
+}
+
+@media( max-width: 815px ){
+    .dark-menu {
+        padding: 20px 10px 20px 10px !important;
+    }
+    .dark-menu-options-item {
+        margin-right: 27px!important;
+    }
+    .head-wrap {
+        padding: 20px 10px 20px 19px!important;
+    }
+    .bike-img {
+    }
+    .dark-menu-options-item:nth-child(3) {
+        margin-right: unset!important;
+    }
+    .promo-head{
+        padding: 20px 10px 20px 10px!important;
+    }
+    .f-backDark {
+        padding: 30px 10px 30px 10px!important;
+    }
+}
+
+@media( max-width: 710px ){
+    .head{
+        height: 812px!important;
+    }
+    .head-back {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+    .head-back-second{
+        width: 100%!important;
+        height: 100%;
+        clip-path: polygon(0 56%, 100% 66%, 100% 100%, 0% 100%)!important;
+    }
+    .head-wrap {
+        flex-direction: column;
+        padding: 0px 10px 20px 10px !important;
+    }
+    .head-text{
+        width: 100%!important;
+        align-items: center;
+        margin-top: 39px!important;
+        margin-bottom: 60px;
+    }
+    .head-text-large {
+        font-size: 40px !important;
+        text-align: center;
+        margin-top:10px;
+    }
+    .promo-logo{
+        width: 125px !important;
+        height: 30px !important;
+        background-size: contain !important;
+    }
+
+    .btn-order {
+        margin-top: 30px !important;
+    }
+    .bike-img-wrap {
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .head-back-first{
+        width: 100% !important;
+    }
+    .bike-img {
+        width: 325px !important;
+        height: 387px !important;
+        position: relative !important;
+        left: unset !important;
+        background-size: cover !important;
+        display: flex;
+        background-position: center;
+        background-image: url("/assets/images/bike-small.svg")!important;
+        right: 0% !important;
+        margin-right: -412px !important;
+        top: 100% !important;
+        right: 0 !important;
+        margin-left: -164px !important;
+        left: 50% !important;
+        margin-top: -8px !important;
+    }
+
+    .dark-menu {
+        padding: 15px 10px 15px 10px !important;
+    }
+    .dark-menu-options{
+        display: none!important;
+    }
+    .dark-menu-btn{
+        display: block!important;
+    }
+    .dark-logo {
+        width: 125px !important;
+        height: 30px !important;
+        background-size: contain !important;
+    }
+
+    .promo-head{
+        padding: 15px 10px 0px 10px!important;
+    }
+    .promo-options {
+        display: none!important;;
+    }
+    .promo-menu-btn{
+        display: block!important
+    }
+    .promo-video-item > video{
+        width: 330px!important;
+        height: 441px!important;
+    }
+    .promo{
+        //height: 812px!important;
+    }
+    .promo-video{
+        position: relative!important;
+        top: -37px!important;
+        margin: 40px auto 31px auto !important;
+        padding-bottom: 0px !important;
+
+        & video{
+            height: 441px !important;
+        }
+
+    }
+    .promo-textBlock{
+        position: relative !important;
+        margin-top: 0px !important;
+    }
+    .promo-text{
+        margin-top:unset!important;
+    }
+
+    .form{
+        width: 375px !important;
+        margin-top: 112px !important;
+    }
+    .form-container{
+        margin: 0px 0px  !important;
+    }
+    .form-block{
+        padding: 0px 10px 0px 10px!important;
+        max-width: unset!important;
+    }
+    .form-title{
+        font-size: 40px !important;
+        white-space: normal !important;
+        margin-bottom: 46px !important;
+    }
+    .form-checkbox {
+        flex-direction: column;
+        margin: 32px 0px 0px 0px !important;
+    }
+    .form-checkbox-submit{
+        width: 100%;
+        margin-right: unset!important;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+    .promo-video-item-btn{
+        width: 100px !important;
+        height: 100px !important;
+        background-size: contain;
+        left: 50% !important;
+        margin-left: -50px !important;      
+        margin-bottom: -50px !important;
+    }
+    .promo-video-item-img {
+        width: 330px !important;
+        height: 441px !important;
+        background-size: contain;
+    }
+    .f-backDark {
+        flex-direction: column;
+        width: 100%;
+        padding: 15px 0px 15px 0px !important;
+    }
+    .f-fav-text{
+        font-size: 13px !important;
+    }    
+    .f-fav-img{
+        margin-right: 4px !important;
+        top: -2px !important;
+    }
+    .f-fav {
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 13px;
+    }
+    .f-backDark-text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 13px !important;
+    }
+    .f-backDark-text-light {
+        margin-left: 4px !important;
+    }
+}
+
