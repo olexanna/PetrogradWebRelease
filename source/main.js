@@ -67,6 +67,7 @@ class Scroller{
 		};
 
 	};
+	
 	animateStop(){
 		clearInterval( this.p_interval );
 		this.p_interval = null;		
