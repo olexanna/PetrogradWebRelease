@@ -2013,7 +2013,7 @@ module.exports = __webpack_require__.p + "2f935113a3c2f6b2ae66.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/release/";
+/******/ 		__webpack_require__.p = "./";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
@@ -2168,7 +2168,6 @@ var Scroller = /*#__PURE__*/function () {
           _this.animateStop();
         }
         ;
-        console.log(step, document.body.scrollTop, offsetTop);
       }, intervalTime);
     }
   }, {

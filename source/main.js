@@ -26,17 +26,19 @@ class Scroller{
 	p_timeout = null;
 
 	constructor(){
-
 		let self = this;
 		let touchStartOffset = 0;
+
 		let listener = ( event ) => {
 			event.preventDefault();
 			event.stopPropagation();
 			self.event( event );
-		};		
+		};
+
 		let touchStartListener = ( event ) => {
 			touchStartOffset = event.touches[ 0 ].screenY;
-		};		
+		};
+
 		let touchListener = ( event ) => {
 
 			let delta = (event.touches[ 0 ].screenY - touchStartOffset);
@@ -64,19 +66,20 @@ class Scroller{
 			document.removeEventListener( "mousewheel", listener, { passive: false } );
 			document.removeEventListener( "touchstart", touchStartListener, { passive: false } );
 			document.removeEventListener( "touchmove", touchListener, { passive: false } );
-		};
-
+		}
 	};
 	
 	animateStop(){
 		clearInterval( this.p_interval );
 		this.p_interval = null;		
+
 		clearInterval( this.p_timeout );
 		this.p_timeout = null;
 	};
-	animateStart( offsetTop ){
 
+	animateStart( offsetTop ){
 		this.animateStop();
+
 		let time = 320;
 		let intervalTime = 8;
 		let step = (offsetTop - document.body.scrollTop) / (time / intervalTime);
@@ -85,6 +88,7 @@ class Scroller{
 			document.body.scrollTop = offsetTop;
 			this.animateStop();
 		}, time );
+
 		this.p_interval = setInterval(() => {
 			document.body.scrollTop += step;
 
@@ -95,8 +99,6 @@ class Scroller{
 				document.body.scrollTop = offsetTop;
 				this.animateStop();
 			};
-
-			console.log( step, document.body.scrollTop, offsetTop );
 
 		}, intervalTime );
 
@@ -145,7 +147,6 @@ let Render = () => {
 	elems.push( document.getElementsByClassName( "footer" )[ 0 ] );
 
 	ScrollerInstance.set( elems );
-
 };
 Render();
 
